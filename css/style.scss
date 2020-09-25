@@ -1,3 +1,4 @@
+$red:rgb(185, 37, 37);
 #embroidery-img {
     max-width: 100%;
     height: auto;
@@ -12,11 +13,20 @@
     margin-bottom: 10%;
 }
 
+.main-text {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
 @media only screen and (max-width: 600px) {
     h1,
     h2,
     #embroidery-text {
         width: 100%;
+    }
+    h1 {
+        margin: 20px 0;
     }
     .navbar-toggler-icon {
         background-image: url('../images/menu.jpg');
@@ -27,15 +37,6 @@
     }
 }
 
-#navbarSupportedContent {
-    display: flex;
-    justify-content: flex-end;
-}
-
-//old index.html
-$red:rgb(185,
-37,
-37);
 .nav-links-section {
     width: 100%;
     display: flex;
@@ -60,6 +61,7 @@ $red:rgb(185,
     }
     .nav-item {
         margin: 0 15px;
+        text-align: right;
     }
 }
 
@@ -67,29 +69,6 @@ $red:rgb(185,
     img {
         height: 50px;
         width: 50px;
-    }
-}
-
-.main-section {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0;
-    justify-content: space-between;
-    img {
-        width: 40%;
-        height: 70%;
-    }
-    h1,
-    h2 {
-        font-family: serif;
-    }
-    .embroidery {
-        padding: 0 5%;
-        align-self: center;
-        #embroidery-text {
-            width: 40%;
-            text-align: justify;
-        }
     }
 }
 
