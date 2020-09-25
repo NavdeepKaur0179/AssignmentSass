@@ -1,4 +1,37 @@
-$red:rgb(185, 37, 37);
+#embroidery-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#embroidery-text {
+    text-align: justify;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    h1,
+    h2,
+    #embroidery-text {
+        width: 100%;
+    }
+    .navbar-toggler-icon {
+        background-image: url('../images/menu.jpg');
+    }
+    .navbar-collapse {
+        background-color: white;
+        z-index: 16;
+    }
+}
+
+#navbarSupportedContent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+//old index.html
+$red:rgb(185,
+37,
+37);
 .nav-links-section {
     width: 100%;
     display: flex;
