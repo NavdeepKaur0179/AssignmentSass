@@ -1,22 +1,29 @@
 $red:rgb(185, 37, 37);
-#embroidery-img {
-    max-width: 100%;
-    height: auto;
+.index-main {
+    margin-top: 5% !important;
 }
 
-#embroidery-text {
-    text-align: justify;
-    width: 50%;
-}
-
-.website-header {
-    margin-bottom: 10%;
+.img-embroidery {
+    height: min-content;
+    width: 100%;
+    height: 450px;
 }
 
 .main-text {
+    height: 1px;
     display: flex;
-    align-items: center;
-    padding: 100px;
+    flex-direction: column;
+    margin-top: 5%;
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    #embroidery-text {
+        text-align: justify;
+        margin: 0 30% 0 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,11 +79,74 @@ $red:rgb(185, 37, 37);
     }
 }
 
-body {
+.website-header {
     margin: 0;
     padding: 0 5%;
 }
 
+.index-main {
+    margin: 3%;
+    padding: 0 5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .undrline-red {
     border-bottom: solid 1px $red;
+}
+
+//About page
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about-us {
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.about-img {
+    background-size: cover;
+    height: 450px;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Gallery
+.gallery {
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#gallery-h2 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.transparent-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10% 25%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
 }
